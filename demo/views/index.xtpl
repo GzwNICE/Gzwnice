@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <ul>
+            <li>姓名: <input type="text" name="username"></li>
+            <li>密码: <input type="password" name="pass"></li>
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+</html>

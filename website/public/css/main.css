@@ -1,0 +1,51 @@
+
+body, h1, h2, h3, p, figure {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url(../images/bg.jpg);
+}
+
+.viewport {
+	width: 980px;
+	margin: 0 auto;
+}
+
+h1 {
+	line-height: 1;
+	padding: 20px 0;
+	color: #666;
+}
+
+nav {
+	height: 48px;
+	line-height: 48px;
+	background: #F7F7F7;
+	border-radius: 4px;
+}
+
+nav a {
+	display: inline-block;
+	height: 100%;
+	margin: 0 15px;
+}
+
+nav a.active {
+	color: red;
+}
+
+section {
+	padding: 10px 15px 30px;
+	margin-top: 20px;
+	background: #F9F9F9;
+}
+
+section h2 {
+	margin-bottom: 20px;
+}
+
+section h3 {
+	margin-bottom: 10px;
+}
