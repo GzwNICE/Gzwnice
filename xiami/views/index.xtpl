@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正在播放:斑马，斑马</title>
+	<link rel="stylesheet" href="./css/main.css">
+
+	<!--[if lte IE 8]>
+		<script src="./js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<!-- LOGO -->
+		<h2 class="logo">
+			<a href="javascript:;">虾米音乐</a>
+		</h2>
+		<!-- 搜索 -->
+		<div class="search">
+			<input type="text">
+		</div>
+	</header>
+	<!-- 主体 -->
+	<section class="body">
+		<!-- 菜单 -->
+		<div class="menu">
+			<ul>
+				<li class="active">
+					<i class="running"></i>
+					<a href="javascript:;">正在播放</a>
+				</li>
+				<li>
+					<i class="history"></i>
+					<a href="javascript:;">播放历史</a>
+				</li>
+				<li>
+					<i class="fav"></i>
+					<a href="javascript:;">我收藏的歌曲</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 专辑信息 -->
+		<div class="album">
+			<aside>
+				<!-- 专辑封面 -->
+				<a href="javascript:;" class="cover">
+					<img src="./images/cover.jpg" alt="">
+				</a>
+				<!-- 歌词 -->
+			</aside>
+		</div>
+		<div class="songs">
+			<div class="wrap-box">
+				<header>
+					<div class="row">
+						<div class='col'>歌曲(50)</div>
+						<div class="col">演唱者</div>
+						<div class="col">专辑</div>
+					</div>
+				</header>
+				<ul class="items">
+					<li class="row">
+						<div class="col">
+							<span title="斑马，斑马">斑马，斑马</span>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="宋东野">宋东野</a>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="安和桥北">安和桥北</a>
+						</div>
+						<a href="javascript:;" class="roam">漫游相似歌曲</a>
+						<div class="extra">
+							<span class="checkbox"></span>
+							<span class="order">1</span>
+						</div>
+						<div class="action">
+							<a href="javascript:;" class="collect"></a>
+							<a href="javascript:;" class="more"></a>
+							<a href="javascript:;" class="delete"></a>
+						</div>
+					</li>
+					<li class="row active">
+						<div class="col">
+							<span title="斑马，斑马">斑马，斑马</span>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="宋东野">宋东野</a>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="安和桥北">安和桥北</a>
+						</div>
+						<a href="javascript:;" class="roam">漫游相似歌曲</a>
+						<div class="extra">
+							<span class="checkbox"></span>
+							<span class="order">2</span>
+						</div>
+						<div class="action">
+							<a href="javascript:;" class="collect"></a>
+							<a href="javascript:;" class="more"></a>
+							<a href="javascript:;" class="delete"></a>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">
+							<span title="斑马，斑马">斑马，斑马</span>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="宋东野">宋东野</a>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="安和桥北">安和桥北</a>
+						</div>
+						<a href="javascript:;" class="roam">漫游相似歌曲</a>
+						<div class="extra">
+							<span class="checkbox"></span>
+							<span class="order">3</span>
+						</div>
+						<div class="action">
+							<a href="javascript:;" class="collect"></a>
+							<a href="javascript:;" class="more"></a>
+							<a href="javascript:;" class="delete"></a>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">
+							<span title="斑马，斑马">斑马，斑马</span>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="宋东野">宋东野</a>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="安和桥北">安和桥北</a>
+						</div>
+						<a href="javascript:;" class="roam">漫游相似歌曲</a>
+						<div class="extra">
+							<span class="checkbox"></span>
+							<span class="order">4</span>
+						</div>
+						<div class="action">
+							<a href="javascript:;" class="collect"></a>
+							<a href="javascript:;" class="more"></a>
+							<a href="javascript:;" class="delete"></a>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">
+							<span title="斑马，斑马">斑马，斑马</span>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="宋东野">宋东野</a>
+						</div>
+						<div class="col">
+							<a href="javascript:;" title="安和桥北">安和桥北</a>
+						</div>
+						<a href="javascript:;" class="roam">漫游相似歌曲</a>
+						<div class="extra">
+							<span class="checkbox"></span>
+							<span class="order">5</span>
+						</div>
+						<div class="action">
+							<a href="javascript:;" class="collect"></a>
+							<a href="javascript:;" class="more"></a>
+							<a href="javascript:;" class="delete"></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- 播放器 -->
+	<div class="player">
+		<div class="controls-wrap">
+			<!-- 播放控制 -->
+			<div class="play-control">
+				<a href="javascript:;" class="prev"></a>
+				<a href="javascript:;" class="play"></a>
+				<a href="javascript:;" class="next"></a>
+				<a href="javascript:;" class="mode"></a>
+			</div>
+			<!-- 播放信息 -->
+			<div class="play-info">
+				<div class="info">
+					<div class="info-wrap">
+						<a href="javascript:;">斑马，斑马</a> -
+						<a href="javascript:;">宋东野</a>
+					</div>
+					<a href="javascript:;" class="collect"></a>
+					<a href="javascript:;" class="share"></a>
+					<a href="javascript:;" class="more"></a>
+				</div>
+				<div class="progress">
+					<div class="progress-bar">
+						<span class="meter"></span>
+					</div>
+					<span class="current-time">00:00</span>
+					<span class="end-time">05:30</span>
+				</div>
+			</div>
+			<!-- 声音控制 -->
+			<div class="volume-control">
+				<div class="volume">
+					<div class="volume-icon"></div>
+					<div class="volume-meter">
+						<span class="meter"></span>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
