@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>学生档案</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>学生档案</legend>
+			<label for="">
+				姓名: <input type="text" name="name" autofocus placeholder="请输入姓名">
+			</label>
+			<label for="">
+				性别: <input type="text" name="sex" autofocus placeholder="请输入性别">
+			</label>
+			<label for="">
+				年龄: <input type="text" name="age" autofocus placeholder="请输入年龄">
+			</label>
+			<label for="">
+				手机号码: <input type="tel" name="phone" placeholder="请输入手机号码">
+			</label>
+			<label for="">
+				邮箱地址: <input type="email" name="email" placeholder="请输入邮箱地址">
+			</label>
+			<label for="">
+				所属学院: <input type="text" name="subject" list="course" placeholder="前端与移动开发学院">
+				<datalist id="course">
+					<option value="前端与移动开发"></option>
+					<option value="PHP"></option>
+					<option value="JAVA"></option>
+					<option value="Android"></option>
+					<option value="IOS"></option>
+					<option value="UI设计"></option>
+					<option value="C++"></option>
+				</datalist>
+			</label>
+			<label for="">
+				入学成绩: <input type="number" name="score" max="100" id="score" step="10" value="80">
+			</label>
+			<label for="">
+				入学日期: <input type="date" name="date_start" value="2016-01-01">
+			</label>
+			<label for="">
+				毕业时间: <input type="date" name="date_end" value="2016-05-01">
+			</label>
+			<label for="" class="btn">
+				<input type="submit" value="保存">
+			</label>
+		</fieldset>
+	</form>
+	<script src="./js/jquery.min.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>

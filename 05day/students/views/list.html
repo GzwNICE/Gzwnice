@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学员信息</title>
+	<link rel="stylesheet" href="./css/list.css">
+</head>
+<body>
+	<table>
+		<caption>学员信息</caption>
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>手机号码</th>
+			<th>邮箱地址</th>
+			<th>所属学院</th>
+			<th>入学成绩</th>
+			<th>入学时间</th>
+			<th>毕业时间</th>
+			<th>操作</th>
+		</tr>
+	</table>
+	<script src="./js/jquery.min.js"></script>
+	<script>
+
+		// console.log(localStorage.getItem('list'));
+
+		var list = localStorage.getItem('list');
+
+		list = list && JSON.parse(list);
+
+		// console.log(list)
+
+		if(list) {
+
+			var html = '';
+
+			$.each(list, function (key, val) {
+				// console.log(this);
+
+				html += '<tr>';
+				html += '<td>' + val.name + '</td>';
+				html += '<td>' + val.sex + '</td>';
+				html += '<td>' + val.age + '</td>';
+				html += '<td>' + val.phone + '</td>';
+				html += '<td>' + val.email + '</td>';
+				html += '<td>' + val.subject + '</td>';
+				html += '<td>' + val.score + '</td>';
+				html += '<td>' + val.date_start + '</td>';
+				html += '<td>' + val.date_end + '</td>';
+				html += '<td><a href="javascript:;">删除</a></td>';
+				html += '</tr>';
+
+			});
+
+			$('table').append(html);
+
+		}
+
+	</script>
+</body>
+</html>

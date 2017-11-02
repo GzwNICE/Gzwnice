@@ -1,0 +1,564 @@
+
+body, h2, ul {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: 0 none;
+}
+
+body {
+	position: relative;
+	font: 14px/1.2 "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+	background-color: #600007;
+	overflow: hidden;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+	width: 184px;
+	height: 56px;
+	padding-left: 16px;
+	background: url(../images/logo.png) no-repeat 16px center;
+	float: left;
+}
+
+.header .logo a {
+	display: block;
+	height: 100%;
+	text-indent: -999px;
+}
+
+.header .search {
+	width: 200px;
+	height: 30px;
+	padding-left: 30px;
+	margin-top: 13px;
+	margin-left: 40px;
+	background: url(../images/search.png) 10px center no-repeat,
+				url(../images/search_bg.png) no-repeat;
+	float: left;
+}
+
+.header .search input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: #FFF;
+	border: 0 none;
+	outline: none;
+	background-color: transparent;
+}
+
+.body {
+	position: absolute;
+	top: 56px;
+	bottom: 80px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.body .songs {
+	height: 100%;
+	padding: 0 310px 0 240px;
+}
+
+.body .wrap-box {
+	position: relative;
+	height: 100%;
+}
+
+.body header {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #CCC;
+	color: #CCC;
+}
+
+.body .row {
+	padding: 0 110px 0 72px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.body .col {
+	width: 33.333%;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.body .items {
+	position: absolute;
+	top: 47px;
+	bottom: 40px;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.body .items .row {
+	position: relative;
+	min-height: 40px;
+	line-height: 41px;
+	border-bottom: 1px solid #E8E8E8;
+	color: #333;
+}
+
+.body .items a {
+	display: block;
+	color: #333;
+}
+
+.body .items a:hover {
+	text-decoration: underline;
+}
+
+.body .items .roam {
+	width: 88px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	color: #FFF;
+	background: url(../images/roam.png) no-repeat;
+	clear: both;
+	display: none;
+}
+
+.body .items .roam:hover {
+	text-decoration: none;
+	background-position: 0 -30px;
+}
+
+.body .extra, .body .action {
+	position: absolute;
+	top: 0;
+	height: 40px;
+}
+
+.body .extra {
+	width: 72px;
+	left: 0;
+}
+
+.body .extra .checkbox {
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: 12px 0 12px 10px;
+	background: url(../images/sprites.png) -1px -710px;
+	float: left;
+}
+
+.body .extra .checkbox:hover {
+	background-position: -19px -710px;
+}
+
+.body .extra .order {
+	display: block;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	margin: 11px 0 12px 10px;
+	float: left;
+	color: #AAA;
+}
+
+.body .action {
+	width: 110px;
+	right: 0;
+}
+
+.body .action a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin-top: 11px;
+	margin-right: 18px;
+	float: left;
+	background-image: url(../images/sprites.png);
+}
+
+.body .action .collect {
+	background-position: -28px -130px;
+}
+
+.body .action .collect:hover {
+	background-position: -28px -155px;
+}
+
+.body .action .more {
+	display: none;
+	background-position: 0 -473px;
+}
+
+.body .action .more:hover {
+	background-position: -28px -473px;
+}
+
+.body .action .delete {
+	display: none;
+	background-position: 0 -491px;
+}
+
+.body .action .delete:hover {
+	background-position: -28px -491px;
+}
+
+.body .items .active,
+.body .items .row:hover {
+	background-color: #F0F0F0;
+}
+
+.body .items .row:hover .order {
+	font-size: 0;
+	background: url(../images/play.png) 0 0;
+}
+
+.body .items .row:hover .order:hover {
+	font-size: 0;
+	background: url(../images/play.png) 0 -18px;
+}
+
+.body .items .active .checkbox {
+	background-position: -1px -710px;
+}
+
+.body .items .active .order {
+	font-size: 0;
+	background: url(../images/icon_1.gif) center center no-repeat !important;
+}
+
+.body .items .active .roam {
+	display: block;
+}
+
+.body .items .active .delete,
+.body .items .row:hover .delete,
+.body .items .active .more,
+.body .items .row:hover .more {
+	display: block;
+}
+
+.body .menu {
+	width: 190px;
+	height: 100%;
+	padding: 0 10px;
+	float: left;
+}
+
+.body .menu ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+.body .menu li {
+	height: 36px;
+	line-height: 36px;
+	border-radius: 4px;
+}
+
+.body .menu li a {
+	display: block;
+	padding-left: 36px;
+	color: #333;
+}
+
+.body .menu li i {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 9px 0 0 9px;
+	float: left;
+}
+
+.body li .running {
+	background: url(../images/icon_2.gif);
+}
+
+.body li .history {
+	background: url(../images/sprites.png) 0 -376px;
+}
+
+.body li .fav {
+	background: url(../images/sprites.png) 0 -394px;
+}
+
+.body .menu li:hover {
+	background-color: #F5F5F5;
+}
+
+.body .menu .active {
+	background-color: #F0F0F0 !important;
+}
+
+.body .album {
+	width: 250px;
+	height: 100%;
+	padding-right: 20px;
+	float: right;
+}
+
+.body .album .cover {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.player {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+}
+
+.player .controls-wrap {
+	position: relative;
+	height: 100%;
+	padding: 0 330px 0 278px;
+}
+
+.player .play-control {
+	width: 278px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.player .play-control a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 25px;
+	background-image: url(../images/sprites.png);
+}
+
+.player .play-control .prev {
+	left: 38px;
+	background-position: 0 -90px;
+}
+
+.player .play-control .prev:hover {
+	left: 38px;
+	background-position: -30px -90px;
+}
+
+.player .play-control .play {
+	left: 91px;
+	background-position: 0 -30px;
+}
+
+.player .play-control .play:hover {
+	left: 91px;
+	background-position: -30px -30px;
+}
+
+.player .play-control .next {
+	left: 144px;
+	background-position: 0 -60px;
+}
+
+.player .play-control .next:hover {
+	left: 144px;
+	background-position: -30px -60px;
+}
+
+.player .play-control .mode {
+	width: 20px;
+	height: 18px;
+	top: 31px;
+	left: 202px;
+	background-position: 0 -181px;
+}
+
+.player .play-control .mode:hover {
+	width: 20px;
+	height: 18px;
+	top: 31px;
+	left: 202px;
+	background-position: -30px -181px;
+}
+
+.player .play-info {
+	height: 100%;
+	position: relative;
+}
+
+.player .play-info .info {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.player .play-info .info-wrap {
+	padding-right: 100px;
+}
+
+.player .play-info a {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #FFF;
+}
+
+.player .play-info a:hover {
+	text-decoration: underline;
+}
+
+.player .play-info .collect,
+.player .play-info .share,
+.player .play-info .more {
+	position: absolute;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	background-image: url(../images/sprites.png);
+}
+
+.player .play-info .collect {
+	right: 66px;
+	background-position: 0 -241px;
+}
+
+.player .play-info .collect:hover {
+	background-position: -28px -241px;
+}
+
+.player .play-info .share {
+	right: 33px;
+	background-position: 0 -259px;
+}
+
+.player .play-info .share:hover {
+	background-position: -28px -259px;
+}
+
+.player .play-info .more {
+	right: 0;
+	background-position: 0 -277px;
+}
+
+.player .play-info .more:hover {
+	background-position: -28px -277px;
+}
+
+.player .progress {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+	height: 20px;
+	font-size: 10px;
+}
+
+.player .progress .current-time,
+.player .progress .end-time {
+	position: absolute;
+	width: 40px;
+	height: 18px;
+	text-align: left;
+	line-height: 18px;
+	color: #FFF;
+	opacity: 0.3;
+}
+
+.player .progress .end-time {
+	right: 0;
+	text-align: right;
+}
+
+.player .progress .progress-bar {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	height: 18px;
+	background: url(../images/meter.png) center repeat-x;
+}
+
+.player .meter {
+	position: absolute;
+	top: 8px;
+	width: 60%;
+	height: 2px;
+	background-color: #FFF;
+}
+
+.player .meter:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -4px;
+	width: 8px;
+	height: 18px;
+	margin-top: -9px;
+	background: url(../images/sprites.png) -32px -338px no-repeat;
+}
+
+.player .volume-control {
+	width: 330px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.player .volume-control .volume {
+	position: absolute;
+	top: 31px;
+	right: 80px;
+	width: 110px;
+	height: 18px;
+}
+
+.player .volume-control .volume-icon {
+	position: absolute;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	background: url(../images/sprites.png) 0 -295px;
+}
+
+.player .volume-control .volume-meter {
+	position: absolute;
+	left: 24px;
+	width: 80px;
+	height: 18px;
+	background: url(../images/meter.png) center repeat-x;
+}
+
+.player .volume-control .meter {
+	width: 50%;
+}
