@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>使用模块进行开发时，需要遵循某些规范，其中require.js是ADM规范的一个实例</h2>
+
+    <h2>seajs 是CMD规范的一个实现</h2>
+
+    <h2>由于 require.js 国际化程度，学习使用 require.js</h2>
+
+    <script src="./libs/require.js"></script>
+    <script>
+        // AMD规范要求使用require来引入加载某个文件
+        // 并且require是一个函数
+
+        // AMD规范要求使用define来定义一个模块
+        // 并且define是一个函数
+
+        // require.js默认认为模块都是以.js结尾，
+        // 所以可以省略后缀，require.js会自动添加
+
+
+        // 第1个需要数组类型参数
+        // 第2个参数为回调函数，通过回调函数可以获得模块的返回值
+
+        var abc='小李';
+
+        require(['./js/c'], function (abc) {
+            console.log(abc);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+1、ECMAScript6前没有对模块进行设计，这导致在开发中对代码进行
+   组织管理时，非常不方便
+
+2、很多开发者试图弥补ES6前没有模块所带来的“缺陷”
+
+3、为了统一标准，开发者讨论制订了一个规范，叫 commonJS
+
+4、后来 commonJS 规范被应用到了 Nodejs 中
+
+5、当将 commonJS 规范试图运用到浏览器中时，发现一些问题
+
+6、后来从 commonJS 中分离出来了一个新的专门应用于浏览器的规范
+
+   A Module Defined 
+
+   其中一个名叫 require.js 的类库按着 AMD 实现了浏览器的规范
+
+7、又有一些人觉得 commonJS 和 AMD 各有优点，又出一个新规范
+
+   Common Module Defined
+
+   其中一个名叫 sea.js 的类库按着CMD 实现了浏览器的规范
+
+
