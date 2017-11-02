@@ -1,0 +1,47 @@
+{{extend ('./layout')}}
+
+{{#block ('main')}}
+    <div class="article">
+        <h2 class="title">{{post.title}}</h2>
+        {{{post.content}}}
+    </div>
+    <!-- 作者 -->
+    <div class="author">
+        <div class="avatar">
+            <a href="./center.html">
+                <img src="{{post.avatar}}" alt="">
+            </a>
+        </div>
+        <div class="wrap-box">
+            <!-- 个人资料 -->
+            <div class="meta">
+                <h4 class="name">
+                    <a href="./center.html">{{post.name}}</a>
+                </h4>
+                <p class="intro">{{post.alt}}</p>
+                <div class="extra">
+                    <span class="icon-location"> 北京. {{post.company}}</span>
+                    <span class="icon-link">
+                        <a href="javascript:;">{{post.homepage}}</a>
+                    </span>
+                    <span class="icon-twitter">
+                        <a href="javascript:;"> @botue</a>
+                    </span>
+                </div>
+            </div>
+            <!-- 社区 -->
+            <div class="social">
+                <h4>分享</h4>
+                <a href="javascript:;" class="icon-twitter"></a>
+                <a href="javascript:;" class="icon-facebook"></a>
+                <a href="javascript:;" class="icon-weibo"></a>
+            </div>
+        </div>
+    </div>
+{{/block}}
+
+{{#block ('script')}}
+<script>
+    console.log('我是文章页的js');
+</script>
+{{/block}}
